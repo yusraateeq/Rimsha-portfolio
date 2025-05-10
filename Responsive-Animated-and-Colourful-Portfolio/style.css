@@ -660,6 +660,50 @@ span {
 
 
 
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.masonry-gallery {
+    column-count: 3;
+    column-gap: 15px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .masonry-gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .masonry-gallery {
+        column-count: 1;
+    }
+}
+
 
 
 .contact {
